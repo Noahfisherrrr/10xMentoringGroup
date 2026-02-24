@@ -10,7 +10,6 @@
 │   │   ├── /base       # _reset.scss, _typography.scss
 │   │   ├── /components # _buttons.scss, _navbar.scss, _card.scss
 │   │   ├── /layout     # _grid.scss, _header.scss, _footer.scss
-│   │   ├── /pages      # _dashboard.scss, _login.scss
 │   │   ├── /abstracts  # _variables.scss, _mixins.scss
 │   │   └── main.scss   # The "1" that @imports everything else
 │   │
@@ -20,8 +19,10 @@
 ├── index.html          # Main Page
 └── dashboard.html      # SaaS App Page
 
-
-
+Dev keywords: 
+    add: new files added;
+    fix: Buggs fixed;
+    
 Noah: 
 
 
