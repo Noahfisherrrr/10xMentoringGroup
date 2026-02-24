@@ -24,9 +24,17 @@ Dev keywords:
     fix: Buggs fixed;
     
 Noah: 
+    reviews
+    contact us
+    footer
 
 
 Ia: 
+    services
+    stories
 
 
 Mate: 
+    header
+    hero
+    about us(section)
