@@ -1,0 +1,11 @@
+@use "../abstracts/mixins";
+
+.reviews, .reviews-wrapper, .review-container-header{
+    @include mixins.flex-center(1rem);
+}
+.review-container-header{
+    text-align: center;
+    h2{
+        font-size: 28px;
+    }
+}
