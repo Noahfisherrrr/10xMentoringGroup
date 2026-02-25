@@ -1,0 +1,8 @@
+@use "../abstracts/mixins";
+
+.reviews-wrapper .review-container-header{
+    @include mixins.flex-center(1rem);
+}
+.review-container-header{
+    
+}

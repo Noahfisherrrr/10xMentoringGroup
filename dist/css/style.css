@@ -41,8 +41,12 @@ input[type=button]:is(button), input:is(button), button[type=button]:is(button),
   cursor: pointer;
 }
 
-a {
-  font-family: "Jakarta", sans-serif;
+.reviews-wrapper .review-container-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
