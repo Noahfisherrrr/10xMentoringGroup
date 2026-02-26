@@ -33,19 +33,59 @@ a {
 
 input, button, textarea, select {
   font: inherit;
+  color: inherit;
 }
-input[type=button]:is(button), input:is(button), button[type=button]:is(button), button:is(button), textarea[type=button]:is(button), textarea:is(button), select[type=button]:is(button), select:is(button) {
+
+button {
   background-color: transparent;
-  border: 0;
-  color: #fff;
+  border: none;
   cursor: pointer;
+  display: inline-block;
+  line-height: normal;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
-.reviews, .reviews-wrapper, .review-container-header {
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #183B56;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #5A7184;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  background-color: #052A44;
+  color: #fff;
+  max-width: 89px;
+  padding: 8px 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.reviews,
+.reviews-wrapper,
+.review-container-header,
+.review-card-container,
+.card-header,
+.card-header-content,
+.review-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,8 +96,55 @@ body {
 .review-container-header {
   text-align: center;
 }
-.review-container-header h2 {
-  font-size: 28px;
+
+.reviews-wrapper {
+  max-width: 17rem;
+  width: 100%;
+  gap: 24px;
+}
+
+.review-card-container {
+  gap: 24px;
+}
+
+.review-card {
+  max-width: 262px;
+  width: 100%;
+  padding: 21px;
+  box-shadow: 1.31px 2.62px 18.34px 0px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 10px;
+}
+
+.card-header {
+  flex-direction: row;
+}
+.card-header img {
+  border-radius: 50%;
+  width: 45px;
+}
+
+.card-header-content {
+  align-items: start;
+  gap: 0px;
+  text-align: start;
+}
+.card-header-content h3 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #12141D;
+}
+.card-header-content p {
+  font-size: 9.5px;
+  color: #12141D;
+}
+
+.review-comment {
+  color: #000;
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

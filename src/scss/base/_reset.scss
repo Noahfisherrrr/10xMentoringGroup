@@ -35,18 +35,17 @@ a {
   color: inherit;
 }
 
-// 5. Forms (Using nesting for cleaner grouping)
+// 5. Forms Reset
 input, button, textarea, select {
   font: inherit;
+  color: inherit; // Allows typography.scss to control color
+}
 
-  // This nests the button-specific styles inside the form reset
-  &[type="button"], 
-  & {
-    &:is(button) {
-      background-color: transparent;
-      border: 0;
-      color: #fff; // Consider using a variable here like $white
-      cursor: pointer;
-    }
-  }
+// Minimal button reset - only remove browser defaults
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block; // Standard for buttons
+  line-height: normal;
 }

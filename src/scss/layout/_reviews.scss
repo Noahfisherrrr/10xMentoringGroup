@@ -1,11 +1,66 @@
 @use "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../components/buttons";
 
-.reviews, .reviews-wrapper, .review-container-header{
+
+
+.reviews, 
+.reviews-wrapper, 
+.review-container-header,
+.review-card-container,
+.card-header,
+.card-header-content,
+.review-card{
     @include mixins.flex-center(1rem);
 }
 .review-container-header{
     text-align: center;
-    h2{
-        font-size: 28px;
+}
+.reviews-wrapper{
+    max-width: 17rem;
+    width: 100%;
+    gap: 24px;
+}
+.review-card-container{
+    gap: 24px;
+
+}
+.review-card{
+    max-width: 262px;
+    width: 100%;
+    padding: 21px;
+    box-shadow: 1.31px 2.62px 18.34px 0px #00000014;
+    border-radius: 10px;
+
+}
+.card-header{
+    flex-direction: row;
+    
+    img{
+        border-radius: 50%;
+        width: 45px;
     }
 }
+.card-header-content{
+    align-items: start;
+    gap: 0px;
+    text-align: start;
+    h3{
+        font-size: 12px;
+        font-weight: 700;
+        color:#12141D;
+    }
+    p{
+        font-size: 9.5px;
+        color: #12141D;
+    }
+}
+.review-comment{
+    color: variables.$black;
+    font-family: variables.$poppins;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
