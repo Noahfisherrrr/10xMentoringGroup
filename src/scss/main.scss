@@ -1,7 +1,13 @@
 @use "base/reset";
 @use "base/typography";
+@use "components/buttons";
+
 
 @use "abstracts/mixins";
 @use "layout/reviews";
+@use "layout/contact-us";
 
 
+main{
+    @include mixins.flex-center(2rem);
+}

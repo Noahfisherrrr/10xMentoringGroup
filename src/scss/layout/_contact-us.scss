@@ -1,3 +1,50 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
 @use "../components/buttons";
+
+.contact-us,
+.contact-header,
+.container-form{
+    @include mixins.flex-center(1rem);
+    text-align: center;
+}
+.contact-us{
+    background-color: variables.$primary-color;
+    border-radius: 10px;
+    padding: 24px 13px;
+}
+.contact-header {
+    h2, p{
+        color: variables.$black;
+        font-weight: 400;
+    }
+    h2{
+        font-size: 28px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+.container-form{
+    input, textarea{
+        padding: 20px 24px;
+        border-radius: 8px;
+        font-size: 1rem;
+        color: #1E1E1E;
+        border: none;
+        width: 100%;
+    }
+    ::placeholder{
+        color: #1E1E1E;
+    }
+    textarea{
+        resize: vertical;
+        min-height: 207px;
+        width: 100%;
+    }
+}
+button{
+    max-width: 176px;
+    padding: 15px 43px;
+}
+
