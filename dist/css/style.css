@@ -80,7 +80,7 @@ button {
 }
 
 .reviews,
-.reviews-wrapper,
+.section-wrapper,
 .review-container-header,
 .review-card-container,
 .card-header,
@@ -97,7 +97,7 @@ button {
   text-align: center;
 }
 
-.reviews-wrapper {
+.section-wrapper {
   max-width: 17rem;
   width: 100%;
   gap: 24px;
@@ -145,6 +145,64 @@ button {
   font-size: 12px;
   line-height: 20px;
   font-weight: 400;
+}
+
+.contact-us,
+.contact-header,
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.contact-us {
+  background-color: #E8DB84;
+  border-radius: 10px;
+  padding: 24px 13px;
+}
+
+.contact-header h2, .contact-header p {
+  color: #000;
+  font-weight: 400;
+}
+.contact-header h2 {
+  font-size: 28px;
+}
+.contact-header p {
+  font-size: 16px;
+}
+
+.container-form input, .container-form textarea {
+  padding: 20px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #1E1E1E;
+  border: none;
+  width: 100%;
+}
+.container-form ::placeholder {
+  color: #1E1E1E;
+}
+.container-form textarea {
+  resize: vertical;
+  min-height: 207px;
+  width: 100%;
+}
+
+button {
+  max-width: 176px;
+  padding: 15px 43px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
