@@ -2,3 +2,51 @@
 @use "../abstracts/variables";
 @use "../components/buttons";
 
+footer{
+    margin-top: 2rem;
+}
+
+.footer-wrapper,
+.footer-contacts,
+.footer-socials,
+.tel-adress-container,
+.footer-help,
+.socials-container {
+    @include mixins.flex-center(null);
+}
+.footer-wrapper{
+    gap: 1.5rem
+}
+.footer-contacts{
+    a{
+        color: variables.$secondary-color;
+        font-size: 1.25rem;
+        font-weight: 500;
+
+    }
+}
+.tel-adress-container{
+    p, a{
+        color: variables.$p-color;
+        font-size: 1rem;
+    }
+}
+.footer-socials, .footer-help  { 
+    p{
+        color: variables.$p-color;
+        font-size: 1rem;
+    }
+}
+.socials-container{
+    flex-direction: row;
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 1px solid variables.$secondary-color;
+        border-radius: 50%;
+    }
+   
+}

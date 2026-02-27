@@ -197,6 +197,55 @@ button {
   padding: 15px 43px;
 }
 
+footer {
+  margin-top: 2rem;
+}
+
+.footer-wrapper,
+.footer-contacts,
+.footer-socials,
+.tel-adress-container,
+.footer-help,
+.socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-wrapper {
+  gap: 1.5rem;
+}
+
+.footer-contacts a {
+  color: #052A44;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.tel-adress-container p, .tel-adress-container a {
+  color: #071210;
+  font-size: 1rem;
+}
+
+.footer-socials p, .footer-help p {
+  color: #071210;
+  font-size: 1rem;
+}
+
+.socials-container {
+  flex-direction: row;
+}
+.socials-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #052A44;
+  border-radius: 50%;
+}
+
 main {
   display: flex;
   justify-content: center;
