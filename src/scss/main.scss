@@ -4,12 +4,13 @@
 
 
 @use "abstracts/mixins";
+@use "layout/header";
 @use "layout/reviews";
 @use "layout/contact-us";
 @use "layout/footer";
 
 
 
-main{
+main, header{
     @include mixins.flex-center(2rem);
 }

@@ -79,6 +79,98 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 272px;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.header-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-icons-container input {
+  display: none;
+}
+
+.light, .close, .nav {
+  display: none;
+}
+
+.close, .burger {
+  max-width: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.nav-ul button {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #000;
+}
+
+body:has(#nav-check:checked) .header-wrapper {
+  align-items: flex-start;
+}
+body:has(#nav-check:checked) .light-dark-mode {
+  display: none;
+}
+body:has(#nav-check:checked) .close {
+  display: block;
+  width: 1.5rem !important;
+}
+body:has(#nav-check:checked) .burger {
+  display: none;
+}
+body:has(#nav-check:checked) .nav {
+  display: block;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.025rem;
+}
+body:has(#nav-check:checked) .nav-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+body:has(#nav-check:checked) .button:hover {
+  background-color: #2E2E2E;
+  transition: 0.1s;
+  user-select: none;
+  transform: translateX(-30%);
+}
+
+body:has(#check:checked) .nav {
+  color: #fff;
+  background-color: #052A44;
+}
+body:has(#check:checked) .nav-ul li:nth-child(6) {
+  background-color: #fff;
+  color: #000;
+}
+body:has(#check:checked) .nav-ul li:nth-child(6):hover {
+  transition: 0.2s;
+  background-color: rgb(218, 213, 213);
+}
+
 .reviews,
 .section-wrapper,
 .review-container-header,
@@ -246,7 +338,7 @@ footer {
   border-radius: 50%;
 }
 
-main {
+main, header {
   display: flex;
   justify-content: center;
   align-items: center;
