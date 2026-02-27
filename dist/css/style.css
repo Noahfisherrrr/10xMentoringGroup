@@ -79,138 +79,79 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
-header {
-  width: 100%;
-}
-
-.head {
-  max-width: 272px;
-  width: 100%;
-}
-
-.head, .head-bar {
+.header-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 272px;
+  width: 100%;
+  padding: 0.5rem;
 }
 
-.light-dark-mode {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  user-select: none;
-  transition: 0.4s;
+.header-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.light-dark-mode .light-dark-mode:hover {
-  transform: scale(1.03);
-}
-.light-dark-mode #check {
-  display: none;
-}
-.light-dark-mode .light {
-  width: 0px;
-  position: relative;
-  transform: translateY(-75%);
-}
-
-.nav-button .nav-click {
-  width: 24px;
-  height: 24px;
-}
-.nav-button .nav-click .nav-img {
-  margin: 0 1px;
-  cursor: pointer;
-}
-.nav-button .nav-click .nav-img > div {
-  width: 22px;
-  height: 2.2px;
-  background-color: #3A4C66;
-}
-.nav-button .nav-click .nav-img > div:nth-of-type(2) {
-  margin: 6px 0;
-}
-.nav-button .nav-click .nav-img:hover {
-  transform: scale(1.05);
-}
-.nav-button #nav-check {
+.header-icons-container input {
   display: none;
 }
 
-.nav {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(100%);
-  transition: 0.2s;
+.light, .close, .nav {
+  display: none;
 }
 
-body:has(#nav-check:checked) main {
-  opacity: 0;
-  visibility: hidden;
+.close, .burger {
+  max-width: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.nav-ul button {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #000;
+}
+
+body:has(#nav-check:checked) .header-wrapper {
+  align-items: flex-start;
 }
 body:has(#nav-check:checked) .light-dark-mode {
-  opacity: 0;
-  visibility: hidden;
-  transition: 0s;
+  display: none;
 }
-body:has(#nav-check:checked) .nav-img div:nth-child(1) {
-  opacity: 0;
-  visibility: hidden;
+body:has(#nav-check:checked) .close {
+  display: block;
+  width: 1.5rem !important;
 }
-body:has(#nav-check:checked) .nav-img div:nth-child(2) {
-  rotate: 45deg;
-  transform: translate(0px, 6px);
-}
-body:has(#nav-check:checked) .nav-img div:nth-child(3) {
-  rotate: -45deg;
-  transform: translate(0px, -6px);
+body:has(#nav-check:checked) .burger {
+  display: none;
 }
 body:has(#nav-check:checked) .nav {
-  opacity: 1;
-  visibility: visible;
-  width: 320px;
-  height: 800px;
-  font-size: 16px;
-  background-color: white;
-  color: black;
-  border-radius: 15px;
-  margin: 0 auto;
-  transform: translate(-65%, -1%);
+  display: block;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.025rem;
 }
 body:has(#nav-check:checked) .nav-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  left: 50%;
-  transform: translate(-10%, 15%);
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
 }
-body:has(#nav-check:checked) .nav-ul li {
-  margin-top: 30px;
-  font-weight: 400;
-}
-body:has(#nav-check:checked) .nav-ul li:nth-child(5) {
-  margin-left: 7px;
-  margin-top: 45px;
-}
-body:has(#nav-check:checked) .nav-ul li:nth-child(6) {
-  width: 153px;
-  height: 54px;
-  background-color: black;
-  color: white;
-  font-weight: 600;
-  border-radius: 8px;
-  text-align: center;
-  line-height: 54px;
-  transform: translateX(-30%);
-}
-body:has(#nav-check:checked) .nav-ul li:nth-child(6):hover {
+body:has(#nav-check:checked) .button:hover {
   background-color: #2E2E2E;
   transition: 0.1s;
   user-select: none;
@@ -218,12 +159,12 @@ body:has(#nav-check:checked) .nav-ul li:nth-child(6):hover {
 }
 
 body:has(#check:checked) .nav {
-  color: white;
+  color: #fff;
   background-color: #052A44;
 }
 body:has(#check:checked) .nav-ul li:nth-child(6) {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
 }
 body:has(#check:checked) .nav-ul li:nth-child(6):hover {
   transition: 0.2s;
@@ -397,7 +338,7 @@ footer {
   border-radius: 50%;
 }
 
-main {
+main, header {
   display: flex;
   justify-content: center;
   align-items: center;

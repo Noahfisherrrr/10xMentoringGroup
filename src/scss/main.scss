@@ -11,6 +11,6 @@
 
 
 
-main{
+main, header{
     @include mixins.flex-center(2rem);
 }
