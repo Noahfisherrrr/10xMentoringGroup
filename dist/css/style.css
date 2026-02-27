@@ -79,6 +79,51 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
+body:has(#check:checked) {
+  background-color: #052A44;
+  color: #fff;
+}
+body:has(#check:checked) h1, body:has(#check:checked) h2, body:has(#check:checked) p {
+  color: #fff;
+}
+body:has(#check:checked) .light-dark-mode {
+  background-color: #052A44;
+}
+body:has(#check:checked) .dark {
+  display: none;
+}
+body:has(#check:checked) .light {
+  display: block;
+  filter: invert(85%) sepia(80%) saturate(900%) hue-rotate(340deg) brightness(100%) contrast(100%);
+}
+body:has(#check:checked) .burger, body:has(#check:checked) .close {
+  filter: invert(85%) sepia(80%) saturate(900%) hue-rotate(340deg) brightness(100%) contrast(100%);
+}
+body:has(#check:checked) .nav-img > div {
+  background-color: #fff;
+}
+body:has(#check:checked) .get-started, body:has(#check:checked) .cont5 {
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+}
+body:has(#check:checked) .cont1 {
+  background-color: #052A44;
+  color: #fff;
+}
+body:has(#check:checked) .review-card {
+  background-color: #fff;
+  color: #000;
+}
+body:has(#check:checked) .review-card p {
+  color: #000;
+}
+body:has(#check:checked) button, body:has(#check:checked) li:nth-child(6) {
+  background-color: #fff;
+  color: #000;
+  border-radius: 0.5rem;
+}
+
 .header-wrapper {
   display: flex;
   justify-content: center;

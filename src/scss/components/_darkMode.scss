@@ -1,0 +1,58 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../components/buttons";
+
+
+body:has(#check:checked) {
+    background-color: variables.$secondary-color;
+    color: variables.$white;
+
+    h1, h2, p {
+        color: variables.$white;
+    }
+
+    .light-dark-mode{
+        background-color: variables.$secondary-color;
+    }
+    .dark {
+        display: none;
+    }
+
+    .light {
+        display: block;
+        filter: invert(85%) sepia(80%) saturate(900%) hue-rotate(340deg) brightness(100%) contrast(100%);
+    }
+
+    .burger, .close {
+        filter: invert(85%) sepia(80%) saturate(900%) hue-rotate(340deg) brightness(100%) contrast(100%);
+    }
+
+    .nav-img > div {
+        background-color: variables.$white;
+    }
+
+    .get-started, .cont5 {
+        background-color: variables.$white;
+        color: variables.$black;
+        font-weight: 500;
+    }
+
+    .cont1 {
+        background-color: variables.$secondary-color;
+        color: variables.$white;
+    }
+
+    .review-card {
+        background-color: variables.$white;
+        color: variables.$black;
+    }
+    .review-card p {
+        color: variables.$black;
+    }
+
+    button, li:nth-child(6) {
+        background-color: variables.$white;
+        color: variables.$black;
+        border-radius: 0.5rem;
+    }
+}

@@ -1,7 +1,7 @@
 @use "base/reset";
 @use "base/typography";
 @use "components/buttons";
-
+@use "components/darkMode";
 
 @use "abstracts/mixins";
 @use "layout/header";
@@ -11,6 +11,6 @@
 
 
 
-main, header{
+main, header {
     @include mixins.flex-center(2rem);
 }

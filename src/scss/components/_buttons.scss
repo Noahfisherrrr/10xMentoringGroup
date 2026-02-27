@@ -1,7 +1,7 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
 
-button{
+button {
     @include mixins.flex-center(0);
     background-color: variables.$secondary-color;
     color: variables.$white;
