@@ -1,0 +1,86 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../components/buttons";
+
+
+.header-wrapper{
+    @include mixins.flex-center(null);
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 272px;
+    width: 100%;
+    padding:0.5rem;
+}
+.header-icons-container {
+    @include mixins.flex-center(1rem);
+    flex-direction: row;
+    justify-content: space-between;
+    input{
+        display: none;
+    }
+}
+.light, .close, .nav {
+    display: none;
+}
+.close, .burger {
+    max-width: 1.5rem;
+    width: 100%;
+    cursor: pointer;
+}
+.nav-ul{
+    button{
+        width: 100%;
+        padding:15px 20px;
+        background-color: variables.$black;
+        
+    }
+}
+
+// // N A V :: Checked
+
+body:has(#nav-check:checked) {  
+    .header-wrapper{
+        align-items: flex-start;
+    }
+    .light-dark-mode {
+        display: none;
+    }
+    .close {
+        display: block;
+        width: 1.5rem !important;   
+    }
+    .burger{
+        display: none;
+    }
+    .nav {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        @include mixins.flex-center(1.025rem);
+    }
+    .nav-ul {
+        @include mixins.flex-center(1.5rem);
+        align-items: flex-start;
+    }
+    .button:hover {
+        background-color: #2E2E2E;
+        transition: 0.1s;
+        user-select: none;
+        transform: translateX(-30%);
+    }
+}
+
+body:has(#check:checked) {
+    .nav {
+        color: variables.$white;
+        background-color: variables.$secondary-color;
+    }
+    .nav-ul li:nth-child(6) {
+        background-color: variables.$white;
+        color: variables.$black;
+    }
+    .nav-ul li:nth-child(6):hover {
+        transition: 0.2s;
+        background-color: rgb(218, 213, 213);
+    }
+}
