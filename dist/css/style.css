@@ -134,8 +134,8 @@ button {
   height: 197px;
   border-radius: 50%;
   background: #052A44;
-  left: -60px;
-  bottom: -20px;
+  left: -35px;
+  top: 300px;
   z-index: 0;
 }
 @media (max-width: 768px) {
