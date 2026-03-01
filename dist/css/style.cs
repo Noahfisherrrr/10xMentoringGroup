@@ -227,7 +227,7 @@ button {
   justify-content: center;
   padding: 10px 18px;
   border-radius: 8px;
-  background: #E8DB84;
+  background: #052A44;
   color: #fff;
   font-weight: 600;
 }
@@ -255,6 +255,7 @@ button {
   display: grid;
   align-items: center;
   gap: 24px;
+  /* figma desktop layout */
   grid-template-columns: 499px 518px;
   justify-content: space-between;
 }
@@ -556,4 +557,4 @@ main, header {
   gap: 2rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */
